@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specimen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="titolo">
+            <img src="img/Vector.png" alt="Vector">
+        </div>
+    </div>
+
+    <div class="sezione-scroll">
+        <div class="hero">
+            <img src="img/Vector1.png" alt="Vector1">
+        </div>
+    </div>
+
+    <div class="editorial">
+        <div class="visual">
+            <img src="img/Frame_2.png" alt="Frame_2">
+        </div>
+    </div>
+
+    <div class="text">
+        <div class="text_visual">
+            <img src="img/text.png" alt="Frame_2">
+            <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus. <br> <br> <br>
+            
+            Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.</p>
+        </div>
+    </div>
+
+    <div class="visual_2">
+        <div class="griglia">
+            <img src="img/Group 32.png" alt="Group 32">
+        </div>
+    </div>
+
+    <div class="sfondo">
+        <div class="letter">
+            <img src="img/Group 27.png" alt="letter_a">
+        </div>
+        <div class="sfondo_visual">
+            <img src="img/Group 1.png" alt="Group 1">
+        </div>
+    </div>
+    
+    <div class="text">
+        <div class="text_visual">
+            <p>Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+        </div>
+    </div>
+
+
+    <div class="continuo">
+        <img id="slideshow" src="" width="100%" height="auto">
+        
+        <script>
+          var images = [ "img/Group 27.png", "img/Group 33.png", "img/Group 34.png", "img/Group 35.png", "img/Group 36.png"]; // Array delle immagini
+          var currentIndex = 0; // Indice corrente
+          
+          function changeImage() {
+            var img = document.getElementById("slideshow");
+            img.src = images[currentIndex]; // Imposta l'immagine corrente
+            
+            currentIndex++; // Incrementa l'indice
+            
+            if (currentIndex >= images.length) {
+              currentIndex = 0; // Riparti dall'inizio se raggiungi la fine dell'array
+            }
+            
+            setTimeout(changeImage, 1000); // Ripeti dopo 2 secondi
+          }
+          
+          changeImage(); // Avvia il loop iniziale
+        </script>
+    </div>
+</body>
+
+</html>
